@@ -26,8 +26,43 @@ struct ListView: View {
                                                     .foregroundColor(item.colorTexto)
                                                     .padding()
                                             }
-                                            .listRowBackground(item.color)
+                        
                                         })
+                                        .listRowBackground(item.color)
+                                }
+                            })
+                Section(header:
+                            Text("Spanish Palette"), content: {
+                                ForEach(lists.spanishPalette) { item in
+                                    NavigationLink(
+                                        destination: DetailView(color: item),
+                                        label: {
+                                            VStack {
+                                                Text(item.nombre)
+                                                    .font(.largeTitle)
+                                                    .foregroundColor(item.colorTexto)
+                                                    .padding()
+                                            }
+                                            
+                                        })
+                                        .listRowBackground(item.color)
+                                }
+                            })
+                Section(header:
+                            Text("FlatUI Palette"), content: {
+                                ForEach(lists.flatUIPalette) { item in
+                                    NavigationLink(
+                                        destination: DetailView(color: item),
+                                        label: {
+                                            VStack {
+                                                Text(item.nombre)
+                                                    .font(.largeTitle)
+                                                    .foregroundColor(item.colorTexto)
+                                                    .padding()
+                                            }
+                                            
+                                        })
+                                        .listRowBackground(item.color)
                                 }
                             })
 

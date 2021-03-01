@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		537432AF25ED860900E78386 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 537432AE25ED860900E78386 /* Colors.xcassets */; };
 		53F024E825EC81FB00DCE290 /* ColorListApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53F024E725EC81FB00DCE290 /* ColorListApp.swift */; };
 		53F024EA25EC81FB00DCE290 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53F024E925EC81FB00DCE290 /* ListView.swift */; };
 		53F024EC25EC81FC00DCE290 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 53F024EB25EC81FC00DCE290 /* Assets.xcassets */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		537432AE25ED860900E78386 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		53F024E425EC81FB00DCE290 /* ColorList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ColorList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		53F024E725EC81FB00DCE290 /* ColorListApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorListApp.swift; sourceTree = "<group>"; };
 		53F024E925EC81FB00DCE290 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
@@ -60,6 +62,7 @@
 			children = (
 				53F024E725EC81FB00DCE290 /* ColorListApp.swift */,
 				53F024E925EC81FB00DCE290 /* ListView.swift */,
+				537432AE25ED860900E78386 /* Colors.xcassets */,
 				53F024FB25EC8EB700DCE290 /* MyColor.swift */,
 				53F024FE25EC8F7C00DCE290 /* MyColorModel.swift */,
 				53F024F825EC843D00DCE290 /* DetailView.swift */,
@@ -135,6 +138,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				537432AF25ED860900E78386 /* Colors.xcassets in Resources */,
 				53F024EF25EC81FC00DCE290 /* Preview Assets.xcassets in Resources */,
 				53F024EC25EC81FC00DCE290 /* Assets.xcassets in Resources */,
 			);
