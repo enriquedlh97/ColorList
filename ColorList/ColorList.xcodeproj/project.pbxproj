@@ -13,6 +13,7 @@
 		53F024EF25EC81FC00DCE290 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 53F024EE25EC81FC00DCE290 /* Preview Assets.xcassets */; };
 		53F024F925EC843D00DCE290 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53F024F825EC843D00DCE290 /* DetailView.swift */; };
 		53F024FC25EC8EB700DCE290 /* MyColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53F024FB25EC8EB700DCE290 /* MyColor.swift */; };
+		53F024FF25EC8F7C00DCE290 /* MyColorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53F024FE25EC8F7C00DCE290 /* MyColorModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		53F024F025EC81FC00DCE290 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		53F024F825EC843D00DCE290 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		53F024FB25EC8EB700DCE290 /* MyColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyColor.swift; sourceTree = "<group>"; };
+		53F024FE25EC8F7C00DCE290 /* MyColorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyColorModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				53F024E725EC81FB00DCE290 /* ColorListApp.swift */,
 				53F024E925EC81FB00DCE290 /* ListView.swift */,
 				53F024FB25EC8EB700DCE290 /* MyColor.swift */,
+				53F024FE25EC8F7C00DCE290 /* MyColorModel.swift */,
 				53F024F825EC843D00DCE290 /* DetailView.swift */,
 				53F024EB25EC81FC00DCE290 /* Assets.xcassets */,
 				53F024F025EC81FC00DCE290 /* Info.plist */,
@@ -147,6 +150,7 @@
 				53F024EA25EC81FB00DCE290 /* ListView.swift in Sources */,
 				53F024FC25EC8EB700DCE290 /* MyColor.swift in Sources */,
 				53F024F925EC843D00DCE290 /* DetailView.swift in Sources */,
+				53F024FF25EC8F7C00DCE290 /* MyColorModel.swift in Sources */,
 				53F024E825EC81FB00DCE290 /* ColorListApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
