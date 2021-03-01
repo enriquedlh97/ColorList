@@ -9,16 +9,14 @@ import SwiftUI
 
 struct DetailView: View {
     
-    var image: String
+    var color: Color
     var text: String
     
     var body: some View {
-        VStack {
-            HStack {
-                Image(systemName: image)
-                    .font(.largeTitle)
-                    .foregroundColor(.blue)
-                Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ZStack {
+            color
+            VStack {
+                Text(text)
             }
         }
         
@@ -27,6 +25,6 @@ struct DetailView: View {
 
 struct DetailView_Previews: PreviewProvider {
     static var previews: some View {
-        DetailView(image: "50.circle.fill", text: "Hello")
+        DetailView(color: Color.blue, text: "Blue")
     }
 }

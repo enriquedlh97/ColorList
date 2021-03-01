@@ -15,8 +15,8 @@ struct ListView: View {
         NavigationView {
             List {
                 Section(header:
-                            Text("List 1"), content: {
-                                ForEach(lists.list1) { item in
+                            Text("American Palette"), content: {
+                                ForEach(lists.americanPalette) { item in
                                     NavigationLink(
                                         destination: DetailView(image: item.image,
                                                                 text: item.text),
