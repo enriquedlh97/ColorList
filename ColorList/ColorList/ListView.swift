@@ -8,21 +8,47 @@
 import SwiftUI
 
 struct ListView: View {
+    
+    var list1 = ["One", "Two", "Three", "Four", "Five"]
+    var list2 = ["Six", "Seven", "Eight", "Nine", "Ten"]
+    
     var body: some View {
         NavigationView {
-            List(0 ..< 51) { item in
-                NavigationLink(
-                    destination: DetailView(image: "\(item).circle.fill",
-                                            text: "Hello World"),
-                        label: {
-                            HStack {
-                                Image(systemName: "\(item).circle.fill")
-                                    .font(.largeTitle)
-                                    .foregroundColor(.blue)
-                                Text("Hello, world!")
-                                    .padding()
-                            }
-                    })
+            List {
+                Section(header:
+                                Text("List 1"), content: {
+                    ForEach(list1, id:\.self) { item in
+                        NavigationLink(
+                            destination: DetailView(image: "hare.fill",
+                                                    text: item),
+                            label: {
+                                HStack {
+                                    Image(systemName: "hare.fill")
+                                        .font(.largeTitle)
+                                        .foregroundColor(.blue)
+                                    Text("\(item)")
+                                        .padding()
+                                }
+                            })
+                    }
+                })
+                Section(header:
+                                Text("List 2"), content: {
+                    ForEach(list2, id:\.self) { item in
+                        NavigationLink(
+                            destination: DetailView(image: "hare.fill",
+                                                    text: item),
+                            label: {
+                                HStack {
+                                    Image(systemName: "hare.fill")
+                                        .font(.largeTitle)
+                                        .foregroundColor(.blue)
+                                    Text("\(item)")
+                                        .padding()
+                                }
+                            })
+                    }
+                })
             }
             .navigationBarTitle("List")
             .navigationBarTitleDisplayMode(.inline)
