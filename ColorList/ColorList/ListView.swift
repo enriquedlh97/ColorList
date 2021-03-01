@@ -18,8 +18,8 @@ struct ListView: View {
                             Text("American Palette"), content: {
                                 ForEach(lists.americanPalette) { item in
                                     NavigationLink(
-                                        destination: DetailView(image: item.image,
-                                                                text: item.text),
+                                        destination: DetailView(color: item.color,
+                                                                text: item.nombre),
                                         label: {
                                             HStack {
                                                 Image(systemName: item.image)

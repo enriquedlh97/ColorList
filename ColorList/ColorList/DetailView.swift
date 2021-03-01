@@ -9,14 +9,15 @@ import SwiftUI
 
 struct DetailView: View {
     
-    var color: Color
-    var text: String
+    var color: MyColor
     
     var body: some View {
         ZStack {
-            color
+            color.color
             VStack {
-                Text(text)
+                Text(color.nombre)
+                    .font(.largeTitle)
+                    .foregroundColor(color.colorTexto)
             }
         }
         
@@ -25,6 +26,6 @@ struct DetailView: View {
 
 struct DetailView_Previews: PreviewProvider {
     static var previews: some View {
-        DetailView(color: Color.blue, text: "Blue")
+        DetailView(color: MyColor(id: 1, color: Color("LightGreenishBlue"), colorTexto: Color("DarkText"), nombre: "Light Greenish Blue", modo: "Light"))
     }
 }

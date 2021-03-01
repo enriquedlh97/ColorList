@@ -9,7 +9,7 @@ import SwiftUI
 
 struct MyColor: Identifiable {
     
-    var id = Int
+    var id: Int
     var color: Color
     var colorTexto: Color
     var nombre: String
