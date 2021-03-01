@@ -27,6 +27,7 @@ struct ListView: View {
             .navigationBarTitle("List")
             .navigationBarTitleDisplayMode(.inline)
         }
+        .accentColor(.red)
     }
 }
 
