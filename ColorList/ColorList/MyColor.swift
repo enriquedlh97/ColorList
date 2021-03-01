@@ -9,8 +9,10 @@ import SwiftUI
 
 struct MyColor: Identifiable {
     
-    var id = UUID()
-    var text: String
-    var image: String
+    var id = Int
+    var color: Color
+    var colorTexto: Color
+    var nombre: String
+    var modo: String
     
 }
