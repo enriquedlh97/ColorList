@@ -18,36 +18,19 @@ struct ListView: View {
                             Text("American Palette"), content: {
                                 ForEach(lists.americanPalette) { item in
                                     NavigationLink(
-                                        destination: DetailView(color: item.color,
-                                                                text: item.nombre),
+                                        destination: DetailView(color: item),
                                         label: {
-                                            HStack {
-                                                Image(systemName: item.image)
+                                            VStack {
+                                                Text(item.nombre)
                                                     .font(.largeTitle)
-                                                    .foregroundColor(.blue)
-                                                Text(item.text)
+                                                    .foregroundColor(item.colorTexto)
                                                     .padding()
                                             }
+                                            .listRowBackground(item.color)
                                         })
                                 }
                             })
-                Section(header:
-                            Text("List 2"), content: {
-                                ForEach(lists.list2) { item in
-                                    NavigationLink(
-                                        destination: DetailView(image: item.image,
-                                                                text: item.text),
-                                        label: {
-                                            HStack {
-                                                Image(systemName: item.image)
-                                                    .font(.largeTitle)
-                                                    .foregroundColor(.blue)
-                                                Text(item.text)
-                                                    .padding()
-                                            }
-                                        })
-                                }
-                            })
+
             }
             .navigationBarTitle("List")
             .navigationBarTitleDisplayMode(.inline)
