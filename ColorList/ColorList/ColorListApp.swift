@@ -2,7 +2,7 @@
 //  ColorListApp.swift
 //  ColorList
 //
-//  Created by user189351 on 2/28/21.
+//  Created by Enrique Diaz de Leon Hicks on 2/28/21.
 //
 
 import SwiftUI
@@ -11,7 +11,7 @@ import SwiftUI
 struct ColorListApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ListView()
         }
     }
 }
