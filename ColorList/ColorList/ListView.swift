@@ -9,46 +9,45 @@ import SwiftUI
 
 struct ListView: View {
     
-    var list1 = ["One", "Two", "Three", "Four", "Five"]
-    var list2 = ["Six", "Seven", "Eight", "Nine", "Ten"]
+    @StateObject var lists = MyColorModel()
     
     var body: some View {
         NavigationView {
             List {
                 Section(header:
-                                Text("List 1"), content: {
-                    ForEach(list1, id:\.self) { item in
-                        NavigationLink(
-                            destination: DetailView(image: "hare.fill",
-                                                    text: item),
-                            label: {
-                                HStack {
-                                    Image(systemName: "hare.fill")
-                                        .font(.largeTitle)
-                                        .foregroundColor(.blue)
-                                    Text("\(item)")
-                                        .padding()
+                            Text("List 1"), content: {
+                                ForEach(lists.list1) { item in
+                                    NavigationLink(
+                                        destination: DetailView(image: item.image,
+                                                                text: item.text),
+                                        label: {
+                                            HStack {
+                                                Image(systemName: item.image)
+                                                    .font(.largeTitle)
+                                                    .foregroundColor(.blue)
+                                                Text(item.text)
+                                                    .padding()
+                                            }
+                                        })
                                 }
                             })
-                    }
-                })
                 Section(header:
-                                Text("List 2"), content: {
-                    ForEach(list2, id:\.self) { item in
-                        NavigationLink(
-                            destination: DetailView(image: "hare.fill",
-                                                    text: item),
-                            label: {
-                                HStack {
-                                    Image(systemName: "hare.fill")
-                                        .font(.largeTitle)
-                                        .foregroundColor(.blue)
-                                    Text("\(item)")
-                                        .padding()
+                            Text("List 2"), content: {
+                                ForEach(lists.list2) { item in
+                                    NavigationLink(
+                                        destination: DetailView(image: item.image,
+                                                                text: item.text),
+                                        label: {
+                                            HStack {
+                                                Image(systemName: item.image)
+                                                    .font(.largeTitle)
+                                                    .foregroundColor(.blue)
+                                                Text(item.text)
+                                                    .padding()
+                                            }
+                                        })
                                 }
                             })
-                    }
-                })
             }
             .navigationBarTitle("List")
             .navigationBarTitleDisplayMode(.inline)
