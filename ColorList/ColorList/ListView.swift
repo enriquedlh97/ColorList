@@ -12,6 +12,11 @@ struct ListView: View {
     @StateObject var lists = MyColorModel()
     @State var showDark: Bool = false
     
+    // Customize navigation Bar Title
+    /*init() {
+        UINavigationBar.appearance().titleTextAttributes = [.font: UIFont(name: "Georgia-Bold", size: 40)!, .foregroundColor: UIColor.red]
+    }*/
+    
     var body: some View {
         NavigationView {
             VStack {
