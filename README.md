@@ -1,6 +1,6 @@
 # ColorList
 
-Simple app for displaying two color palettes and filter by dark shades
+Simple app for displaying two color palettes and filter by dark shades.
 
 <p align="center">
 <img src="https://github.com/enriquedlh97/ColorList/blob/main/Simulator%20Screen%20Shot%20-%20iPhone%2012%20-%202021-03-07%20at%2009.12.04.png" width="200">
